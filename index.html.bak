@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRIMSON SPIN | Premium Glassmorphic Gaming & Sports Betting</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/enhanced.css">
+</head>
+<body>
+
+  <!-- Background Animated Blobs -->
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Header Section -->
+  <header class="main-header">
+    <!-- Row 1: Brand Logo + Balance + User Auth + Search -->
+    <div class="header-row-top">
+      <div class="header-left d-flex align-items-center gap-2">
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <a href="#" class="brand-logo">
+          <span>Crimson</span>Spin
+        </a>
+      </div>
+      
+      <div class="search-container d-none d-lg-block">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" class="search-input" placeholder="Search games, providers, categories..." id="global-search">
+      </div>
+      
+      <div class="header-controls">
+        <!-- Live Wallet Balance Display -->
+        <div class="balance-card" id="header-wallet-btn" style="cursor: pointer;">
+          <span class="balance-label d-none d-sm-inline"><i class="fa-solid fa-wallet"></i> Balance</span>
+          <span class="balance-value ms-sm-2" id="header-balance-amount">$5,240.85</span>
+          <button class="wallet-btn ms-2 px-2 py-1" style="font-size: 0.75rem;" aria-label="Deposit Funds">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        
+        <!-- User Avatar / Menu Toggle -->
+        <div class="avatar-wrapper">
+          <img src="img/game_blackjack.png" alt="Avatar" class="avatar-img">
+        </div>
+        <span class="username-label d-none d-xl-inline">VIP Player</span>
+      </div>
+    </div>
+
+    <!-- Row 2: Secondary horizontal navigation pills + Auth triggers -->
+    <div class="header-row-bottom">
+      <nav>
+        <ul class="category-pills">
+          <li><a href="#" class="active" id="pill-all"><i class="fa-solid fa-border-all"></i> All Games</a></li>
+          <li><a href="#hot-games" id="pill-hot"><i class="fa-solid fa-fire"></i> Hot Games</a></li>
+          <li><a href="#live-events" id="pill-live"><i class="fa-solid fa-circle-notch"></i> Live events</a></li>
+          <li><a href="#categories" id="pill-categories"><i class="fa-solid fa-list"></i> Categories</a></li>
+          <li><a href="#live-streams" id="pill-streams"><i class="fa-solid fa-video"></i> Live Casino</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-auth">
+        <a href="#" class="login-link trigger-login">Login</a>
+        <button class="glow-btn trigger-register" style="padding: 8px 18px; font-size: 0.85rem;">Register</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    
+    <!-- 1. Hero Banner Slider -->
+    <section class="hero-section" id="hero-banner">
+      <div class="swiper hero-slider">
+        <div class="swiper-wrapper">
+          <!-- Slide 1: Lucky 6 Roller -->
+          <div class="swiper-slide hero-slide" style="background-image: url('img/hero_main_banner.png');">
+            <div class="hero-content">
+              <span class="hero-tag"><i class="fa-solid fa-circle-play"></i> Streaming Now</span>
+              <h1 class="hero-title">Lucky 6 <span>Roller</span></h1>
+              <p class="hero-desc">Experience our signature premium dice rollers with 100x multiplier drops and real-time multiplayer lobbies.</p>
+              <div class="hero-actions">
+                <button class="glow-btn trigger-register">Play Now <i class="fa-solid fa-chevron-right"></i></button>
+                <button class="outline-btn trigger-login">Spectate Session</button>
+              </div>
+              <div class="hero-stats">
+                <div class="hero-stat-item">
+                  <span class="hero-stat-value">100x</span>
+                  <span class="hero-stat-label">Max Multiplier</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-value">$250K</span>
+                  <span class="hero-stat-label">Weekly Pool</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-value">1,200+</span>
+                  <span class="hero-stat-label">Games</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2: Crimson Jackpot -->
+          <div class="swiper-slide hero-slide" style="background-image: url('img/casino_lobby_banner.png');">
+            <div class="hero-content">
+              <span class="hero-tag"><i class="fa-solid fa-trophy"></i> Mega Wins</span>
+              <h1 class="hero-title">Crimson <span>Jackpot</span></h1>
+              <p class="hero-desc">The ultimate grand casino pools are boiling. Spin our curated premium slots for a chance at the $250K weekly jackpot pool.</p>
+              <div class="hero-actions">
+                <button class="glow-btn trigger-register">Spin &amp; Win <i class="fa-solid fa-rotate"></i></button>
+                <button class="outline-btn trigger-register">View Rules</button>
+              </div>
+              <div class="hero-stats">
+                <div class="hero-stat-item">
+                  <span class="hero-stat-value">$250K</span>
+                  <span class="hero-stat-label">Jackpot Pool</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-value">99.0%</span>
+                  <span class="hero-stat-label">RTP Rate</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-value">24/7</span>
+                  <span class="hero-stat-label">Live Support</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3: Sports Betting -->
+          <div class="swiper-slide hero-slide" style="background-image: url('img/sports_betting_hero.png');">
+            <div class="hero-content">
+              <span class="hero-tag"><i class="fa-solid fa-bolt"></i> Live Betting</span>
+              <h1 class="hero-title">Sports <span>Betting</span></h1>
+              <p class="hero-desc">Bet live on 30+ sports with real-time odds updated every second. Cash out anytime before the final whistle.</p>
+              <div class="hero-actions">
+                <button class="glow-btn trigger-register">Bet Now <i class="fa-solid fa-arrow-right"></i></button>
+                <button class="outline-btn trigger-login">View Odds</button>
+              </div>
+              <div class="hero-stats">
+                <div class="hero-stat-item">
+                  <span class="hero-stat-value">8</span>
+                  <span class="hero-stat-label">Live Now</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-value">30+</span>
+                  <span class="hero-stat-label">Sports</span>
+                </div>
+                <div class="hero-stat-item">
+                  <span class="hero-stat-value">5.2x</span>
+                  <span class="hero-stat-label">Best Odds</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination hero-pagination"></div>
+      </div>
+    </section>
+
+    <!-- 2. Hot Games Grid -->
+    <section id="hot-games" class="sports-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Hot Games <span class="badge-count">Popular</span></h2>
+          <p class="section-subtitle">A curated grid showcasing popular game titles</p>
+        </div>
+      </div>
+      <div class="hot-games-grid row g-3 row-cols-2 row-cols-md-3 row-cols-lg-4" id="hot-games-container">
+        <!-- Aviator -->
+        <div class="gcard-wrapper col">
+          <div class="gcard" style="background: linear-gradient(160deg, #0f1729 0%, #1e3a8a 60%, #3b82f6 100%);">
+            <img src="img/game_aviator.png" alt="Aviator" class="gcard-img" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.7;">
+            <div class="gcard-overlay-hover"><button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button></div>
+            <div class="gcard-body" style="position:relative;z-index:2;"><div class="gcard-title">AVIATOR</div><div class="gcard-provider">SPRIBE</div></div>
+          </div>
+        </div>
+        <!-- Lucky 6 Roller -->
+        <div class="gcard-wrapper col">
+          <div class="gcard" style="background: linear-gradient(160deg, #3a0a00 0%, #dc2626 60%, #f97316 100%);">
+            <img src="img/hero_main_banner.png" alt="Lucky 6" class="gcard-img" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.7;">
+            <div class="gcard-overlay-hover"><button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button></div>
+            <div class="gcard-body" style="position:relative;z-index:2;"><div class="gcard-title">LUCKY 6 ROROLLER</div><div class="gcard-provider">CRIMSON ORIGINAL</div></div>
+          </div>
+        </div>
+        <!-- Mines -->
+        <div class="gcard-wrapper col">
+          <div class="gcard" style="background: linear-gradient(160deg, #0a1f0a 0%, #15652a 60%, #22c55e 100%);">
+            <div class="gcard-deco">💣</div>
+            <div class="gcard-overlay-hover"><button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button></div>
+            <div class="gcard-body"><div class="gcard-title">MINES</div><div class="gcard-provider">SPRIBE</div></div>
+          </div>
+        </div>
+        <!-- Plinko -->
+        <div class="gcard-wrapper col">
+          <div class="gcard" style="background: linear-gradient(160deg, #1a0a2e 0%, #7c3aed 60%, #a855f7 100%);">
+            <div class="gcard-deco">🎯</div>
+            <div class="gcard-overlay-hover"><button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button></div>
+            <div class="gcard-body"><div class="gcard-title">PLINKO</div><div class="gcard-provider">SPRIBE</div></div>
+          </div>
+        </div>
+        <!-- Crazy Time -->
+        <div class="gcard-wrapper col extra-hot-game" style="display: none;">
+          <div class="gcard" style="background: linear-gradient(160deg, #3a0a00 0%, #dc2626 60%, #f97316 100%);">
+            <div class="gcard-deco">🎡</div>
+            <div class="gcard-overlay-hover"><button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button></div>
+            <div class="gcard-body"><div class="gcard-title">CRAZY TIME</div><div class="gcard-provider">EVOLUTION</div></div>
+          </div>
+        </div>
+        <!-- Lightning Roulette -->
+        <div class="gcard-wrapper col extra-hot-game" style="display: none;">
+          <div class="gcard" style="background: radial-gradient(circle at center, #78350f 0%, #92400e 40%, #1c0a00 100%);">
+            <img src="img/game_roulette.png" alt="Lightning Roulette" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.8;">
+            <div class="gcard-overlay-hover"><button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button></div>
+            <div class="gcard-body" style="position:relative;z-index:2;"><div class="gcard-title">LIGHTNING ROULETTE</div><div class="gcard-provider">EVOLUTION</div></div>
+          </div>
+        </div>
+        <!-- Blackjack VIP -->
+        <div class="gcard-wrapper col extra-hot-game" style="display: none;">
+          <div class="gcard" style="background: linear-gradient(160deg, #0a0a0a 0%, #374151 60%, #111827 100%);">
+            <img src="img/game_blackjack.png" alt="Blackjack VIP" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.85;">
+            <div class="gcard-overlay-hover"><button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button></div>
+            <div class="gcard-body" style="position:relative;z-index:2;"><div class="gcard-title">BLACKJACK VIP</div><div class="gcard-provider">EVOLUTION</div></div>
+          </div>
+        </div>
+        <!-- Spaceman -->
+        <div class="gcard-wrapper col extra-hot-game" style="display: none;">
+          <div class="gcard" style="background: linear-gradient(160deg, #020617 0%, #1e3a5f 55%, #0ea5e9 100%);">
+            <div class="gcard-deco">🚀</div>
+            <div class="gcard-overlay-hover"><button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button></div>
+            <div class="gcard-body"><div class="gcard-title">SPACEMAN</div><div class="gcard-provider">PRAGMATIC</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-footer">
+        <button class="outline-btn" id="hot-games-view-more">View More <i class="fa-solid fa-chevron-down"></i></button>
+      </div>
+    </section>
+
+    <!-- New Section: Featured Games (2025 Premium Game Cards) -->
+    <section id="featured-games" class="sports-section">
+      <div class="section-header d-flex justify-content-between align-items-center">
+        <div>
+          <h2 class="section-title">Featured Games <span class="badge-count">New</span></h2>
+          <p class="section-subtitle">Premium selected high-roller experiences</p>
+        </div>
+        <div class="slider-controls d-flex gap-2">
+          <button class="outline-btn btn-sm games-prev" aria-label="Previous Featured"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="outline-btn btn-sm games-next" aria-label="Next Featured"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+      
+      <div class="swiper games-slider">
+        <div class="swiper-wrapper">
+          <!-- Premium Card 1 -->
+          <div class="swiper-slide">
+            <div class="premium-game-card">
+              <div class="pgc-badge">🔥 HOT</div>
+              <div class="pgc-img-wrapper">
+                <img src="img/game_aviator.png" alt="Aviator" class="pgc-img">
+              </div>
+              <div class="pgc-content">
+                <h3 class="pgc-title">Aviator Crash</h3>
+                <p class="pgc-desc">Cash out before the plane flies away in this high-adrenaline multiplier crash game.</p>
+                <div class="pgc-footer">
+                  <span class="pgc-provider"><i class="fa-solid fa-paper-plane"></i> SPRIBE</span>
+                  <button class="pgc-play-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Premium Card 2 -->
+          <div class="swiper-slide">
+            <div class="premium-game-card">
+              <div class="pgc-badge" style="background: linear-gradient(135deg, #10b981, #047857);">✨ NEW</div>
+              <div class="pgc-img-wrapper">
+                <img src="img/game_roulette.png" alt="Lightning Roulette" class="pgc-img">
+              </div>
+              <div class="pgc-content">
+                <h3 class="pgc-title">Lightning Roulette</h3>
+                <p class="pgc-desc">Classic roulette supercharged with random 500x multipliers on every single spin.</p>
+                <div class="pgc-footer">
+                  <span class="pgc-provider"><i class="fa-solid fa-dna"></i> EVOLUTION</span>
+                  <button class="pgc-play-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Premium Card 3 -->
+          <div class="swiper-slide">
+            <div class="premium-game-card">
+              <div class="pgc-badge" style="background: linear-gradient(135deg, #8b5cf6, #5b21b6);">📈 TRENDING</div>
+              <div class="pgc-img-wrapper">
+                <div style="font-size:5rem;display:flex;align-items:center;justify-content:center;height:100%;background:linear-gradient(135deg, #0f172a, #6d28d9);">🎯</div>
+              </div>
+              <div class="pgc-content">
+                <h3 class="pgc-title">Neon Plinko</h3>
+                <p class="pgc-desc">Drop the ball and watch it bounce through the neon pegs for massive 1000x payouts.</p>
+                <div class="pgc-footer">
+                  <span class="pgc-provider"><i class="fa-solid fa-star"></i> ORIGINALS</span>
+                  <button class="pgc-play-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Premium Card 4 -->
+          <div class="swiper-slide">
+            <div class="premium-game-card">
+              <div class="pgc-badge" style="background: linear-gradient(135deg, #f59e0b, #b45309);">🏆 JACKPOT</div>
+              <div class="pgc-img-wrapper">
+                <img src="img/game_blackjack.png" alt="Blackjack VIP" class="pgc-img">
+              </div>
+              <div class="pgc-content">
+                <h3 class="pgc-title">Blackjack VIP</h3>
+                <p class="pgc-desc">Pull up a seat at the premium tables. High limits and side bets for true high rollers.</p>
+                <div class="pgc-footer">
+                  <span class="pgc-provider"><i class="fa-solid fa-crown"></i> PRAGMATIC</span>
+                  <button class="pgc-play-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Premium Card 5 -->
+          <div class="swiper-slide">
+            <div class="premium-game-card">
+              <div class="pgc-badge" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">🌐 LIVE</div>
+              <div class="pgc-img-wrapper">
+                <div style="font-size:5rem;display:flex;align-items:center;justify-content:center;height:100%;background:linear-gradient(135deg, #0a1f0a, #1e3a8a);">🃏</div>
+              </div>
+              <div class="pgc-content">
+                <h3 class="pgc-title">Speed Baccarat</h3>
+                <p class="pgc-desc">Fast-paced baccarat action with no delays. Place your bets and beat the banker.</p>
+                <div class="pgc-footer">
+                  <span class="pgc-provider"><i class="fa-solid fa-dice"></i> EZUGI</span>
+                  <button class="pgc-play-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Live Events Section -->
+    <section class="sports-section" id="live-events">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Live Events <span class="badge-count" id="live-match-count">8 Live</span></h2>
+          <p class="section-subtitle">Click odds to add to your bet slip</p>
+        </div>
+      </div>
+      <div class="sports-tabs">
+        <button class="sport-tab active" data-sport="all"><span class="sport-icon">⚽</span> All</button>
+        <button class="sport-tab" data-sport="football"><span class="sport-icon">⚽</span> Football</button>
+        <button class="sport-tab" data-sport="basketball"><span class="sport-icon">🏀</span> Basketball</button>
+        <button class="sport-tab" data-sport="cricket"><span class="sport-icon">🏏</span> Cricket</button>
+        <button class="sport-tab" data-sport="tennis"><span class="sport-icon">🎾</span> Tennis</button>
+        <button class="sport-tab" data-sport="esports"><span class="sport-icon">🎮</span> Esports</button>
+      </div>
+      <div class="match-grid row g-3" id="match-grid"></div>
+    </section>
+
+    <!-- 4. Casino Type Selection -->
+    <section id="categories" class="sports-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Casino Selection</h2>
+          <p class="section-subtitle">Split into major gaming verticals</p>
+        </div>
+      </div>
+      
+      <!-- Verticals Matrix -->
+      <div class="category-matrix row g-3 row-cols-1 row-cols-md-2 mb-4">
+        <!-- Box 1 -->
+        <div class="col">
+          <a href="#all-games" class="matrix-banner glass-panel d-flex" style="background-image: url('img/casino_lobby_banner.png'); text-decoration: none;">
+            <div class="matrix-content">
+              <span class="badge bg-danger mb-2 text-uppercase">Live Craps & Table</span>
+              <h3 class="matrix-title text-white">Casino & Live Dealer</h3>
+              <p class="matrix-desc mb-0 text-white-50">Open Lobby <i class="fa-solid fa-arrow-right ms-1"></i></p>
+            </div>
+          </a>
+        </div>
+        <!-- Box 2 -->
+        <div class="col">
+          <a href="#all-games" class="matrix-banner glass-panel d-flex" style="background-image: url('img/crash_games_banner.png'); text-decoration: none;">
+            <div class="matrix-content">
+              <span class="badge bg-danger mb-2 text-uppercase">Instant Multipliers</span>
+              <h3 class="matrix-title text-white">Crash & Instant Games</h3>
+              <p class="matrix-desc mb-0 text-white-50">Explore Originals <i class="fa-solid fa-arrow-right ms-1"></i></p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Sub-Category filter bar -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all"><i class="fa-solid fa-border-all"></i> All Games</button>
+        <button class="filter-btn" data-filter="instant"><i class="fa-solid fa-bolt"></i> Instant</button>
+        <button class="filter-btn" data-filter="slots"><i class="fa-solid fa-gamepad"></i> Slot</button>
+        <button class="filter-btn" data-filter="roulette"><i class="fa-solid fa-circle-notch"></i> Roulette</button>
+        <button class="filter-btn" data-filter="tv"><i class="fa-solid fa-tv"></i> TV Games</button>
+        <button class="filter-btn" data-filter="bingo"><i class="fa-solid fa-ticket"></i> Bingo</button>
+      </div>
+    </section>
+
+    <!-- 5. Top Trends Showcase Slider -->
+    <section id="trends" class="sports-section">
+      <div class="section-header d-flex justify-content-between align-items-center">
+        <div>
+          <h2 class="section-title">Top Trends</h2>
+          <p class="section-subtitle">Trending games and features around the world</p>
+        </div>
+        <div class="slider-controls d-flex gap-2">
+          <button class="outline-btn btn-sm trends-prev" aria-label="Previous Trend"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="outline-btn btn-sm trends-next" aria-label="Next Trend"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+      
+      <div class="swiper trends-slider">
+        <div class="swiper-wrapper">
+          <!-- Trend Card 1: Mines -->
+          <div class="swiper-slide">
+            <div class="trend-card">
+              <div class="trend-img-box">
+                <div class="game-card-art art-theme-mines">
+                  <div class="game-card-icon-wrap">
+                    <i class="fa-solid fa-bomb"></i>
+                  </div>
+                  <span class="game-card-art-title">Mines</span>
+                </div>
+                <div class="trend-stats">Trending #1</div>
+              </div>
+              <div class="trend-info">
+                <h3 class="trend-title text-white">MINES ORIGINAL</h3>
+                <span class="trend-sub">SPRIBE • 99.0% RTP</span>
+              </div>
+            </div>
+          </div>
+          <!-- Trend Card 2: Aviator -->
+          <div class="swiper-slide">
+            <div class="trend-card">
+              <div class="trend-img-box">
+                <img src="img/game_aviator.png" alt="Aviator" class="trend-img">
+                <div class="trend-stats">Hot Player Active</div>
+              </div>
+              <div class="trend-info">
+                <h3 class="trend-title text-white">AVIATOR CRASH</h3>
+                <span class="trend-sub">SPRIBE • 97.0% RTP</span>
+              </div>
+            </div>
+          </div>
+          <!-- Trend Card 3: Lightning Roulette -->
+          <div class="swiper-slide">
+            <div class="trend-card">
+              <div class="trend-img-box">
+                <img src="img/game_roulette.png" alt="Roulette" class="trend-img">
+                <div class="trend-stats">Multiplier 500x</div>
+              </div>
+              <div class="trend-info">
+                <h3 class="trend-title text-white">LIGHTNING ROULETTE</h3>
+                <span class="trend-sub">EVOLUTION • 97.3% RTP</span>
+              </div>
+            </div>
+          </div>
+          <!-- Trend Card 4: Plinko -->
+          <div class="swiper-slide">
+            <div class="trend-card">
+              <div class="trend-img-box">
+                <div class="game-card-art art-theme-plinko">
+                  <div class="game-card-icon-wrap">
+                    <i class="fa-solid fa-bullseye"></i>
+                  </div>
+                  <span class="game-card-art-title">Plinko</span>
+                </div>
+                <div class="trend-stats">1000x Potential</div>
+              </div>
+              <div class="trend-info">
+                <h3 class="trend-title text-white">PLINKO</h3>
+                <span class="trend-sub">SPRIBE • 99.0% RTP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Promotions & Offers Carousel -->
+    <section id="promotions" class="sports-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Promotions & Offers</h2>
+          <p class="section-subtitle">Grab exclusive rewards and deposit bonuses</p>
+        </div>
+      </div>
+      <div class="swiper promo-slider">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="promo-card" style="background-image: url('img/promo_jackpot_banner.png');">
+              <div class="promo-content">
+                <span class="promo-tag">LIMITED EVENT</span>
+                <h3 class="promo-title">Mega Jackpot Splash</h3>
+                <button class="glow-btn trigger-register">Opt In Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="promo-card" style="background-image: url('img/promo_daily_banner.png');">
+              <div class="promo-content">
+                <span class="promo-tag">DAILY LOYALTY</span>
+                <h3 class="promo-title">Daily Loyalty Spin Boosts</h3>
+                <button class="glow-btn trigger-register">Claim Spin</button>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="promo-card" style="background-image: url('img/promo_vip_banner.png');">
+              <div class="promo-content">
+                <span class="promo-tag">VIP STATUS</span>
+                <h3 class="promo-title">Exclusive Club Cashback</h3>
+                <button class="glow-btn trigger-register">Join VIP</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. All Games Master Grid -->
+    <section id="all-games" class="sports-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">All Games <span class="badge-count">1,200+</span></h2>
+          <p class="section-subtitle">Browse our complete library of interactive games</p>
+        </div>
+      </div>
+      <div class="master-games-grid row g-2 g-md-3 row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6" id="all-games-grid">
+        <!-- Aviator -->
+        <div class="col">
+          <div class="game-card">
+            <div class="game-badge">HOT</div>
+            <img src="img/game_aviator.png" alt="Aviator" class="game-thumb">
+            <div class="game-overlay">
+              <h3 class="game-overlay-title">AVIATOR</h3>
+              <span class="game-overlay-provider">SPRIBE</span>
+              <button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+          </div>
+        </div>
+        <!-- Mines -->
+        <div class="col">
+          <div class="game-card">
+            <div class="game-badge badge-dark">SPRIBE</div>
+            <div class="game-card-art art-theme-mines">
+              <div class="game-card-icon-wrap">
+                <i class="fa-solid fa-bomb"></i>
+              </div>
+              <span class="game-card-art-title">Mines</span>
+            </div>
+            <div class="game-overlay">
+              <h3 class="game-overlay-title">MINES</h3>
+              <span class="game-overlay-provider">SPRIBE</span>
+              <button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+          </div>
+        </div>
+        <!-- Plinko -->
+        <div class="col">
+          <div class="game-card">
+            <div class="game-badge badge-dark">SPRIBE</div>
+            <div class="game-card-art art-theme-plinko">
+              <div class="game-card-icon-wrap">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <span class="game-card-art-title">Plinko</span>
+            </div>
+            <div class="game-overlay">
+              <h3 class="game-overlay-title">PLINKO</h3>
+              <span class="game-overlay-provider">SPRIBE</span>
+              <button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+          </div>
+        </div>
+        <!-- Crazy Time -->
+        <div class="col">
+          <div class="game-card">
+            <div class="game-badge">LIVE</div>
+            <div class="game-card-art art-theme-crazy">
+              <div class="game-card-icon-wrap">
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+              <span class="game-card-art-title">Crazy Time</span>
+            </div>
+            <div class="game-overlay">
+              <h3 class="game-overlay-title">CRAZY TIME</h3>
+              <span class="game-overlay-provider">EVOLUTION</span>
+              <button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+          </div>
+        </div>
+        <!-- Lightning Roulette -->
+        <div class="col">
+          <div class="game-card">
+            <div class="game-badge badge-gold">POPULAR</div>
+            <img src="img/game_roulette.png" alt="Lightning Roulette" class="game-thumb">
+            <div class="game-overlay">
+              <h3 class="game-overlay-title">LIGHTNING ROULETTE</h3>
+              <span class="game-overlay-provider">EVOLUTION</span>
+              <button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+          </div>
+        </div>
+        <!-- Blackjack VIP -->
+        <div class="col">
+          <div class="game-card">
+            <div class="game-badge badge-gold">HIGH ROLLER</div>
+            <img src="img/game_blackjack.png" alt="Blackjack VIP" class="game-thumb">
+            <div class="game-overlay">
+              <h3 class="game-overlay-title">BLACKJACK VIP</h3>
+              <span class="game-overlay-provider">EVOLUTION</span>
+              <button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+          </div>
+        </div>
+        <!-- Sweet Bonanza -->
+        <div class="col">
+          <div class="game-card">
+            <div class="game-badge badge-dark">SLOTS</div>
+            <div class="game-card-art art-theme-sweet">
+              <div class="game-card-icon-wrap">
+                <i class="fa-solid fa-candy-cane"></i>
+              </div>
+              <span class="game-card-art-title">Sweet Bonanza</span>
+            </div>
+            <div class="game-overlay">
+              <h3 class="game-overlay-title">SWEET BONANZA</h3>
+              <span class="game-overlay-provider">PRAGMATIC</span>
+              <button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+          </div>
+        </div>
+        <!-- Gates of Olympus -->
+        <div class="col">
+          <div class="game-card">
+            <div class="game-badge badge-dark">SLOTS</div>
+            <div class="game-card-art art-theme-gates">
+              <div class="game-card-icon-wrap">
+                <i class="fa-solid fa-bolt-lightning"></i>
+              </div>
+              <span class="game-card-art-title">Gates of Olympus</span>
+            </div>
+            <div class="game-overlay">
+              <h3 class="game-overlay-title">GATES OF OLYMPUS</h3>
+              <span class="game-overlay-provider">PRAGMATIC</span>
+              <button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+          </div>
+        </div>
+        <!-- Spaceman -->
+        <div class="col">
+          <div class="game-card">
+            <div class="game-badge badge-dark">CRASH</div>
+            <div class="game-card-art art-theme-spaceman">
+              <div class="game-card-icon-wrap">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <span class="game-card-art-title">Spaceman</span>
+            </div>
+            <div class="game-overlay">
+              <h3 class="game-overlay-title">SPACEMAN</h3>
+              <span class="game-overlay-provider">PRAGMATIC</span>
+              <button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+          </div>
+        </div>
+        <!-- Limbo -->
+        <div class="col">
+          <div class="game-card">
+            <div class="game-badge badge-dark">CRASH</div>
+            <div class="game-card-art art-theme-limbo">
+              <div class="game-card-icon-wrap">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <span class="game-card-art-title">Limbo</span>
+            </div>
+            <div class="game-overlay">
+              <h3 class="game-overlay-title">LIMBO</h3>
+              <span class="game-overlay-provider">SPRIBE</span>
+              <button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+          </div>
+        </div>
+        <!-- Dragon Tiger -->
+        <div class="col">
+          <div class="game-card">
+            <div class="game-badge">LIVE</div>
+            <div class="game-card-art art-theme-dragon">
+              <div class="game-card-icon-wrap">
+                <i class="fa-solid fa-dragon"></i>
+              </div>
+              <span class="game-card-art-title">Dragon Tiger</span>
+            </div>
+            <div class="game-overlay">
+              <h3 class="game-overlay-title">DRAGON TIGER</h3>
+              <span class="game-overlay-provider">EVOLUTION</span>
+              <button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+          </div>
+        </div>
+        <!-- Keno -->
+        <div class="col">
+          <div class="game-card">
+            <div class="game-badge badge-dark">LOTTERY</div>
+            <div class="game-card-art art-theme-keno">
+              <div class="game-card-icon-wrap">
+                <i class="fa-solid fa-ticket"></i>
+              </div>
+              <span class="game-card-art-title">Keno</span>
+            </div>
+            <div class="game-overlay">
+              <h3 class="game-overlay-title">KENO</h3>
+              <span class="game-overlay-provider">SPRIBE</span>
+              <button class="glow-btn trigger-register"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-footer">
+        <button class="outline-btn" id="all-games-view-more">View All Games</button>
+      </div>
+    </section>
+
+    <!-- 8. Loyalty / Features Program -->
+    <section id="loyalty" class="sports-section">
+      <div class="loyalty-block row g-3 row-cols-1 row-cols-lg-3">
+        <!-- Col 1: Exclusive Tournaments -->
+        <div class="col">
+          <div class="loyalty-card glass-panel glass-panel-hover">
+            <div class="loyalty-icon-wrapper">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <h3 class="loyalty-title">Exclusive Tournaments</h3>
+            <p class="loyalty-desc">Compete with world-class VIP rollers in weekly leaderboard challenges. Climb higher to claim mega stakes shares.</p>
+          </div>
+        </div>
+        <!-- Col 2: Loyalty Model -->
+        <div class="col">
+          <div class="loyalty-card glass-panel glass-panel-hover">
+            <div class="loyalty-icon-wrapper">
+              <i class="fa-solid fa-percent"></i>
+            </div>
+            <h3 class="loyalty-title">Loyalty Model</h3>
+            <p class="loyalty-desc">Receive real-time cashback calculated per roll, with zero wagering requirements. Instantly cashout or replay.</p>
+          </div>
+        </div>
+        <!-- Col 3: Levelling Scheme -->
+        <div class="col">
+          <div class="loyalty-card glass-panel glass-panel-hover">
+            <div class="loyalty-icon-wrapper">
+              <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <h3 class="loyalty-title">Levelling Scheme</h3>
+            <p class="loyalty-desc">Progress through Gold, Platinum, and Legendary VIP tiers to unlock a dedicated host, and customized milestones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Main Action Bonus Banner -->
+    <section id="cta-banner" class="sports-section">
+      <div class="conversion-banner" style="background-image: url('img/bonus_cta_banner.png');">
+        <div class="conversion-content">
+          <h2 class="conversion-title">100% Bonus up to <span>Win More Gifts</span></h2>
+          <button class="glow-btn pulsing-glow trigger-register" id="cta-bonus-register">Register Now <i class="fa-solid fa-user-plus"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Live Games Section -->
+    <section id="live-streams" class="sports-section">
+      <div class="section-header d-flex justify-content-between align-items-center">
+        <div>
+          <h2 class="section-title">Live Dealer Games <span class="badge-count">Live Now</span></h2>
+          <p class="section-subtitle">Real-time dealer streams with high-definition broadcast feed</p>
+        </div>
+        <div class="slider-controls d-flex gap-2">
+          <button class="outline-btn btn-sm streams-prev" aria-label="Previous Live Stream"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="outline-btn btn-sm streams-next" aria-label="Next Live Stream"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+      
+      <div class="swiper streams-slider">
+        <div class="swiper-wrapper">
+          <!-- Stream Slide 1: Blackjack VIP -->
+          <div class="swiper-slide">
+            <div class="stream-card">
+              <img src="img/game_blackjack.png" alt="Blackjack VIP" class="stream-preview">
+              <div class="stream-overlay">
+                <div class="stream-info-row">
+                  <div>
+                    <h4 class="stream-title">Blackjack VIP</h4>
+                    <span class="stream-dealer">Dealer: Sarah</span>
+                  </div>
+                  <span class="stream-player-count"><i class="fa-solid fa-user"></i> 142</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Stream Slide 2: Lightning Roulette -->
+          <div class="swiper-slide">
+            <div class="stream-card">
+              <img src="img/game_roulette.png" alt="Roulette" class="stream-preview">
+              <div class="stream-overlay">
+                <div class="stream-info-row">
+                  <div>
+                    <h4 class="stream-title">Lightning Roulette</h4>
+                    <span class="stream-dealer">Dealer: Marcus</span>
+                  </div>
+                  <span class="stream-player-count"><i class="fa-solid fa-user"></i> 894</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Stream Slide 3: Crazy Time -->
+          <div class="swiper-slide">
+            <div class="stream-card">
+              <div style="font-size:4rem;display:flex;align-items:center;justify-content:center;height:100%;background:linear-gradient(135deg, #3a0a00, #b91c1c);">🎡</div>
+              <div class="stream-overlay">
+                <div class="stream-info-row">
+                  <div>
+                    <h4 class="stream-title">Crazy Time</h4>
+                    <span class="stream-dealer">Dealer: Chloe</span>
+                  </div>
+                  <span class="stream-player-count"><i class="fa-solid fa-user"></i> 1.2K</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Stream Slide 4: Baccarat Live -->
+          <div class="swiper-slide">
+            <div class="stream-card">
+              <div style="font-size:4rem;display:flex;align-items:center;justify-content:center;height:100%;background:linear-gradient(135deg, #0a1f0a, #1e3a8a);">🃏</div>
+              <div class="stream-overlay">
+                <div class="stream-info-row">
+                  <div>
+                    <h4 class="stream-title">Baccarat Live</h4>
+                    <span class="stream-dealer">Dealer: Yuki</span>
+                  </div>
+                  <span class="stream-player-count"><i class="fa-solid fa-user"></i> 230</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Provider / Game Ticker Section -->
+    <section id="provider-game-ticker" class="sports-section">
+      <div class="ticker-container glass-panel">
+        <div class="ticker-categories">
+          <button class="ticker-pill active"><i class="fa-solid fa-gamepad"></i> Slots</button>
+          <button class="ticker-pill"><i class="fa-solid fa-circle-notch"></i> Live Casino</button>
+          <button class="ticker-pill"><i class="fa-solid fa-trophy"></i> Table Games</button>
+          <button class="ticker-pill"><i class="fa-solid fa-bolt"></i> Crash Games</button>
+          <button class="ticker-pill"><i class="fa-solid fa-clover"></i> Poker</button>
+          <button class="ticker-pill"><i class="fa-solid fa-football"></i> Sports</button>
+        </div>
+        <div class="ticker-auth">
+          <button class="outline-btn trigger-login">Login</button>
+          <button class="glow-btn trigger-register">Register Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. Provider Filtering -->
+    <section id="providers" class="sports-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Software Providers</h2>
+          <p class="section-subtitle">Integrated gaming studio networks</p>
+        </div>
+      </div>
+      <div class="provider-grid row g-2 row-cols-2 row-cols-sm-3 row-cols-md-6">
+        <!-- Spribe -->
+        <div class="col">
+          <div class="provider-card glass-panel">
+            <div class="provider-logo-svg" style="display: flex; align-items: center; gap: 8px; color: var(--color-text-muted); font-family: var(--font-display); font-weight: 900; font-size: 1.1rem; letter-spacing: 0.1em;">
+              <i class="fa-solid fa-paper-plane" style="color: var(--color-glow);"></i> SPRIBE
+            </div>
+          </div>
+        </div>
+        <!-- Evolution -->
+        <div class="col">
+          <div class="provider-card glass-panel">
+            <div class="provider-logo-svg" style="display: flex; align-items: center; gap: 8px; color: var(--color-text-muted); font-family: var(--font-display); font-weight: 900; font-size: 1.1rem; letter-spacing: 0.1em;">
+              <i class="fa-solid fa-dna" style="color: var(--color-glow);"></i> EVOLUTION
+            </div>
+          </div>
+        </div>
+        <!-- Pragmatic Play -->
+        <div class="col">
+          <div class="provider-card glass-panel">
+            <div class="provider-logo-svg" style="display: flex; align-items: center; gap: 6px; color: var(--color-text-muted); font-family: var(--font-display); font-weight: 900; font-size: 1rem; letter-spacing: 0.05em;">
+              <i class="fa-solid fa-crown" style="color: var(--color-glow);"></i> PRAGMATIC
+            </div>
+          </div>
+        </div>
+        <!-- NetEnt -->
+        <div class="col">
+          <div class="provider-card glass-panel">
+            <div class="provider-logo-svg" style="display: flex; align-items: center; gap: 8px; color: var(--color-text-muted); font-family: var(--font-display); font-weight: 900; font-size: 1.1rem; letter-spacing: 0.15em;">
+              NETENT
+            </div>
+          </div>
+        </div>
+        <!-- Playtech -->
+        <div class="col">
+          <div class="provider-card glass-panel">
+            <div class="provider-logo-svg" style="display: flex; align-items: center; gap: 4px; color: var(--color-text-muted); font-family: var(--font-display); font-weight: 900; font-size: 1.1rem; letter-spacing: 0.05em;">
+              PLAY<span style="color: var(--color-glow);">TECH</span>
+            </div>
+          </div>
+        </div>
+        <!-- Ezugi -->
+        <div class="col">
+          <div class="provider-card glass-panel">
+            <div class="provider-logo-svg" style="display: flex; align-items: center; gap: 8px; color: var(--color-text-muted); font-family: var(--font-display); font-weight: 900; font-size: 1.1rem; letter-spacing: 0.1em;">
+              <i class="fa-solid fa-dice" style="color: var(--color-glow);"></i> EZUGI
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. Latest Activity / Bets Ticker -->
+    <section id="activity-ticker" class="sports-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Latest Platform Activity</h2>
+          <p class="section-subtitle">Real-time statistics of ongoing wins and wagers</p>
+        </div>
+      </div>
+      <div class="bet-ticker-wrapper glass-panel" style="padding: 2rem;">
+        <div class="tab-headers">
+          <button class="tab-btn active" data-tab="winners" id="tab-winners">Top Winners</button>
+          <button class="tab-btn" data-tab="bets" id="tab-bets">Latest Bets</button>
+        </div>
+        
+        <div class="table-responsive">
+          <table class="data-table" id="table-winners">
+            <thead>
+              <tr>
+                <th>Username</th>
+                <th>Amount Won</th>
+                <th>Game Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Populated via Javascript -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table" id="table-bets" style="display: none;">
+            <thead>
+              <tr>
+                <th>Username</th>
+                <th>Bet Multiplier</th>
+                <th>Payout</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Populated via Javascript -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 14. Trust, Security & Compliance Footer -->
+  <footer class="footer-wrapper">
+    <!-- Payment & Security Badges -->
+    <div class="payment-row">
+      <div class="payment-item" style="display: flex; align-items: center; gap: 8px; font-family: var(--font-display); font-weight: 700; color: var(--color-text-muted);"><i class="fa-brands fa-cc-visa" style="font-size: 2.2rem;"></i> VISA</div>
+      <div class="payment-item" style="display: flex; align-items: center; gap: 8px; font-family: var(--font-display); font-weight: 700; color: var(--color-text-muted);"><i class="fa-brands fa-cc-mastercard" style="font-size: 2.2rem;"></i> MASTERCARD</div>
+      <div class="payment-item" style="display: flex; align-items: center; gap: 8px; font-family: var(--font-display); font-weight: 700; color: var(--color-text-muted);"><i class="fa-brands fa-bitcoin" style="font-size: 2.2rem; color: #f2a900;"></i> BITCOIN</div>
+      <div class="payment-item" style="display: flex; align-items: center; gap: 8px; font-family: var(--font-display); font-weight: 700; color: var(--color-text-muted);"><i class="fa-brands fa-ethereum" style="font-size: 2.2rem; color: #627eea;"></i> ETHEREUM</div>
+      <div class="payment-item" style="display: flex; align-items: center; gap: 8px; font-family: var(--font-display); font-weight: 700; color: var(--color-text-muted);"><i class="fa-solid fa-dollar-sign" style="font-size: 2.2rem; color: #26a17b;"></i> USDT</div>
+    </div>
+    
+    <!-- Footer Brand Block -->
+    <div class="brand-block">
+      <a href="#" class="brand-logo" style="margin-bottom: 0.5rem;">
+        <span>Crimson</span>Spin
+      </a>
+      <p class="responsible-text">
+        Responsible Gambling: CrimsonSpin is committed to promoting responsible gaming. Playing online casino wagers should always be for entertainment. Make sure to stay within your limits. Underage gambling is strictly prohibited.
+      </p>
+      <p class="license-info">
+        Licensed and regulated by the Government of Curacao under license number 8048/JAZ. All rights reserved. Gaming Studio partners are licensed by their respective authorities.
+      </p>
+      <div class="social-icons">
+        <a href="#" class="social-link"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-discord"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    
+    <!-- Footer Partner Bar -->
+    <div class="partner-bar">
+      <div class="partner-item" style="display: flex; align-items: center; gap: 6px; font-family: var(--font-display); font-weight: 800; font-size: 0.85rem; color: rgba(255, 255, 255, 0.25);"><i class="fa-solid fa-paper-plane"></i> SPRIBE</div>
+      <div class="partner-item" style="display: flex; align-items: center; gap: 6px; font-family: var(--font-display); font-weight: 800; font-size: 0.85rem; color: rgba(255, 255, 255, 0.25);"><i class="fa-solid fa-dna"></i> EVOLUTION</div>
+      <div class="partner-item" style="display: flex; align-items: center; gap: 6px; font-family: var(--font-display); font-weight: 800; font-size: 0.85rem; color: rgba(255, 255, 255, 0.25);"><i class="fa-solid fa-dice"></i> EZUGI</div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <!-- Wallet / Deposit Modal -->
+  <div class="modal-overlay" id="wallet-modal">
+    <div class="modal-content glass-panel">
+      <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <h2 style="margin-bottom: 1.5rem; text-transform: uppercase; text-align: center;"><i class="fa-solid fa-wallet" style="color: var(--color-glow);"></i> Wallet Deposit</h2>
+      <form id="deposit-form">
+        <div class="form-group">
+          <label>Select Crypto Currency</label>
+          <div class="wallet-deposit-options">
+            <div class="deposit-method-btn active" data-currency="BTC">BTC</div>
+            <div class="deposit-method-btn" data-currency="ETH">ETH</div>
+            <div class="deposit-method-btn" data-currency="USDT">USDT</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="deposit-amount">Amount to Deposit ($)</label>
+          <input type="number" class="form-input" id="deposit-amount" min="10" value="100" required>
+        </div>
+        <button type="submit" class="glow-btn" style="width: 100%; margin-top: 1rem;">Confirm Deposit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal-overlay" id="login-modal">
+    <div class="modal-content glass-panel">
+      <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <h2 style="margin-bottom: 1.5rem; text-transform: uppercase; text-align: center;">Account Login</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="login-username">Username or Email</label>
+          <input type="text" class="form-input" id="login-username" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" class="form-input" id="login-password" required>
+        </div>
+        <button type="submit" class="glow-btn" style="width: 100%; margin-top: 1rem;">Access Account</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div class="modal-overlay" id="register-modal">
+    <div class="modal-content glass-panel">
+      <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <h2 style="margin-bottom: 1.5rem; text-transform: uppercase; text-align: center;">Create Account</h2>
+      <form id="register-form">
+        <div class="form-group">
+          <label for="reg-username">Choose Username</label>
+          <input type="text" class="form-input" id="reg-username" required>
+        </div>
+        <div class="form-group">
+          <label for="reg-email">Email Address</label>
+          <input type="email" class="form-input" id="reg-email" required>
+        </div>
+        <div class="form-group">
+          <label for="reg-password">Password</label>
+          <input type="password" class="form-input" id="reg-password" required>
+        </div>
+        <button type="submit" class="glow-btn" style="width: 100%; margin-top: 1rem;">Register Now</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-content glass-panel">
+      <div class="drawer-header">
+        <span class="brand-logo"><span>Crimson</span>Spin</span>
+        <button class="drawer-close" id="drawer-close" aria-label="Close Menu"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="drawer-body">
+        <div class="drawer-section">
+          <h3>Categories</h3>
+          <ul class="drawer-nav">
+            <li><a href="#hero-banner" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#hot-games"><i class="fa-solid fa-fire"></i> Hot Games</a></li>
+            <li><a href="#live-events"><i class="fa-solid fa-circle-notch"></i> Live Events</a></li>
+            <li><a href="#categories"><i class="fa-solid fa-list"></i> Categories</a></li>
+            <li><a href="#all-games"><i class="fa-solid fa-gamepad"></i> All Games</a></li>
+            <li><a href="#live-streams"><i class="fa-solid fa-video"></i> Live Casino</a></li>
+            <li><a href="#activity-ticker"><i class="fa-solid fa-chart-line"></i> Live Feed</a></li>
+          </ul>
+        </div>
+        <div class="drawer-section auth-section" style="margin-top: 2rem;">
+          <button class="outline-btn trigger-login" style="width: 100%;">Login</button>
+          <button class="glow-btn trigger-register" style="width: 100%; margin-top: 0.75rem;">Register Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Bottom Nav Bar -->
+  <div class="mobile-bottom-nav" id="mobile-bottom-nav">
+    <a href="#hero-banner" class="bottom-nav-item active" id="bot-nav-home">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+    <a href="#all-games" class="bottom-nav-item" id="bot-nav-games">
+      <i class="fa-solid fa-gamepad"></i>
+      <span>Casino</span>
+    </a>
+    <a href="#live-events" class="bottom-nav-item" id="bot-nav-live">
+      <i class="fa-solid fa-circle-notch"></i>
+      <span>Live</span>
+    </a>
+    <a href="#" class="bottom-nav-item" id="bot-nav-wallet">
+      <i class="fa-solid fa-wallet"></i>
+      <span>Wallet</span>
+    </a>
+    <a href="#" class="bottom-nav-item" id="bot-nav-menu">
+      <i class="fa-solid fa-bars"></i>
+      <span>Menu</span>
+    </a>
+  </div>
+
+  <!-- Bet Slip FAB -->
+  <button class="bet-slip-fab" id="bet-slip-fab">
+    <i class="fa-solid fa-receipt"></i> Bet Slip
+    <span class="bet-slip-count" id="bet-slip-count">0</span>
+  </button>
+
+  <!-- Bet Slip Side Panel -->
+  <div class="bet-slip-modal" id="bet-slip-modal">
+    <div class="bet-slip-header">
+      <span class="bet-slip-title"><i class="fa-solid fa-receipt"></i> Bet Slip</span>
+      <button class="bet-slip-close" id="bet-slip-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="bet-slip-body" id="bet-slip-body">
+      <div class="bet-slip-empty" id="bet-slip-empty">
+        <i class="fa-solid fa-receipt"></i>
+        <p>Your bet slip is empty.<br>Click on any odds to add a selection.</p>
+      </div>
+    </div>
+    <div class="bet-slip-footer" id="bet-slip-footer" style="display:none;">
+      <div class="bet-totals">
+        <div class="bet-total-row"><span>Total Stake</span><span class="amount" id="total-stake">$0.00</span></div>
+        <div class="bet-total-row"><span>Total Odds</span><span id="total-odds">0.00</span></div>
+        <div class="bet-total-row total-payout"><span>Potential Win</span><span class="amount" id="potential-win">$0.00</span></div>
+      </div>
+      <button class="place-bet-btn" id="place-bet-btn"><i class="fa-solid fa-check-circle"></i> Place Bet</button>
+    </div>
+  </div>
+
+  <!-- Win Toast Notification -->
+  <div class="win-toast" id="win-toast">
+    <span class="win-toast-icon">🏆</span>
+    <div class="win-toast-text">
+      <div class="win-amount" id="win-toast-amount">You Won $1,250.00!</div>
+      <div class="win-game" id="win-toast-game">Lightning Roulette</div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper.js JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
